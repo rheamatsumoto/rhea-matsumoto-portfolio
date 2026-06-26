@@ -12,7 +12,7 @@ h2 {
     font-family: "Alexandria", sans-serif;
     font-weight: normal;
     font-style: normal;
-    color:rgb(76, 49, 140);
+    color:rgb(102, 78, 158);
     text-decoration: none;
     list-style-type: none;
     padding-bottom: 10px;
@@ -23,7 +23,7 @@ h3 {
     font-family: "Alexandria", sans-serif;
     font-weight: normal;
     font-style: normal;
-    color:rgb(115, 80, 157);
+    color:rgb(116, 84, 155);
     list-style-type: none;
     text-decoration: none;
     line-height: 1px;
@@ -35,7 +35,7 @@ h4 {
     font-family: "Alexandria", sans-serif;
     font-weight: normal;
     font-style: normal;
-    color:rgb(117, 83, 158);
+    color:rgb(129, 97, 167);
     list-style-type: none;
     text-decoration: none;
 }
@@ -44,7 +44,7 @@ h5 {
     font-family: "Alexandria", sans-serif;
     font-weight: normal;
     font-style: normal;
-    color:rgb(144, 113, 181);
+    color:rgb(125, 107, 150);
     list-style-type: none;
     text-decoration: none;
     line-height: 1px;
@@ -64,6 +64,8 @@ img {
     margin-left: auto;
     margin-right: auto;
     max-width: 100%;
+    box-shadow: 0 2px 9.1px 0 rgba(100, 81, 135, 0.40);
+    
 }
 
 li {
@@ -75,7 +77,7 @@ p {
     font-family: "Alexandria", sans-serif;
     font-weight: 300;
     font-style: normal;
-    color:rgb(92, 67, 122);
+    color:rgb(116, 90, 147);
     padding-bottom: 10px;
     line-height: 1.5em;
 }
@@ -119,6 +121,16 @@ u {
     border:#c599e2 solid 1px;
 }
 
+#button u:hover {
+    background-color:#e0b9fb;
+    color:#6b38bc;
+    
+}
+
+#button u:hover a {
+    color:#7e3cad
+}
+
 #sssthumbnail {
     padding-top: 80px;
 }
@@ -160,7 +172,7 @@ a {
     font-family: "Alexandria", sans-serif;
     font-weight: normal;
     font-style: normal;
-    color:#7e4ca2;
+    color:#7e2db8;
 }
 
 a:hover {
@@ -306,7 +318,7 @@ h1 a {
 
 @media only screen and (min-width: 1020px) {
     header, footer {
-        max-width: 1020px;
+        max-width: 100%;
     }
 
     body {
