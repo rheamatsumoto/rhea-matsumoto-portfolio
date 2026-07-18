@@ -220,9 +220,6 @@ a:hover {
 }
 
 
-#logo {
-    justify-content: left;
-}
 
 /*
 #logo {
@@ -310,7 +307,7 @@ footer ul li a {
     justify-content: space-between;
     width: 100%;
     align-items: center;
-    max-width: 800px;
+    max-width: 970px;
     margin: 0 auto;
     box-sizing: border-box;
     
@@ -547,7 +544,7 @@ html {
 
 
 
-@media only screen and (min-width: 1020px) {
+@media only screen and (min-width: 950px) {
     header, footer {
         max-width: 100%;
     }
@@ -657,7 +654,7 @@ html {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 20px 30px;
+        padding: 20px 10px;
         margin: auto;
         width: 1000px;
     }
@@ -676,9 +673,10 @@ html {
         flex-direction: row;
     }
 
-    #navigation #logo {
+    #logo {
         height: 90px;
-        width: auto
+        width: auto;
+        margin: 0
     }
 
     #navigation #social {
