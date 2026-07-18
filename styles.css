@@ -182,7 +182,7 @@ footer {
     padding-left: 20px;
     padding-bottom: 10px;
     flex-direction: column;
-    padding-top: 20px
+    padding-top: 10px
 } 
 
 #footertop {
@@ -299,19 +299,27 @@ footer ul li a {
     padding-top: 80px;
 }
 
-h2 nav ul li a {
-    text-decoration: none;
-    list-style-type: none;
-}
+
 
 #navigation {
     font-style: normal;
     text-decoration: none;
-
+    padding-bottom: 40px;
     flex-direction: row;
     display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    box-sizing: border-box;
     
-    width: 900px;
+}
+
+#social {
+    display: flex;
+    flex-direction: row;
+    gap: 2px
 }
 
 #titles {
@@ -409,8 +417,17 @@ h1 a {
     text-decoration: none;
     display: inline-flex;
     align-items: center;
-    gap: 6px
+    gap: 4px
     
+}
+
+#navigation ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    gap: 30px;
 }
 
 
