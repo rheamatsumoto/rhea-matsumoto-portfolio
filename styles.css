@@ -120,6 +120,12 @@ img {
     animation-range: entry 10% cover 40%;
 }
 
+#sss img {
+    animation: slide linear both;
+    animation-timeline: view();
+    animation-range: entry 10% cover 40%;
+}
+
 span {
     color:#d55231
 }
@@ -134,7 +140,7 @@ p {
     font-weight: 300;
     font-style: normal;
     color: #d05166;
-    line-height: 1.5em;
+    line-height: 1.4em;
    
 }
 
@@ -185,9 +191,19 @@ body {
     padding-right: 30px;
 }
 
+#sss-text h2 h5 {
+    line-height: 1.5em;
+    
+}
+
+
+#sss h4 {
+    line-height: 0
+}
 
 #sss h2 {
-    font-weight: 500
+    font-weight: 500;
+    line-height: 1.1
 }
 
 
@@ -201,13 +217,16 @@ footer {
     padding-top: 10px
 } 
 
-footer p {
-    padding-top: 50px
-}
+
 
 
 #footertop {
     font-size: 21px;
+    
+}
+
+#footertop h3 {
+    line-height: 1.5em;
 }
 
 #footerbottom {
@@ -219,13 +238,15 @@ footer p {
     
 }
 
+
+
 #socialfooter {
     display: flex;
     flex-direction: column;
     gap: 12px;
     justify-content: right;
     font-size:large;
-    padding-top: 42px
+    
 }
 
 a:hover {
@@ -236,10 +257,10 @@ a:hover {
     transform: scale(1.05)
 }
 
-#title {
+#title h2 {
     display: flex;
     gap: 13px;
-    line-height: 0;
+    line-height: 1;
     margin: 0
 }
 
@@ -386,10 +407,10 @@ footer ul li a {
     justify-content:right
 }
 
-#sss-text {
+#sss-text h2 {
     display: flex;
     gap: 10px;
-    line-height: 0;
+    
     padding-top: 10px;
     padding-bottom: 4px;
 }
@@ -403,7 +424,7 @@ footer ul li a {
     font-family: "Host Grotesk", sans-serif;
     font-size: 13px;
     align-items: center;
-    line-height: 0;
+    line-height: 1.1;
     color:#de755b;
     padding-left: 3px;
     padding-right: 3px;
@@ -491,6 +512,7 @@ h1 a {
 
 
 
+
 #profile {
     margin-top: 50px;
 }
@@ -514,11 +536,20 @@ h1 a {
 }
 
 #view {
-    padding-bottom: 70px;
+    padding-bottom: 40px;
     padding-top: 40px;
     text-align: center;
     transition: transform 0.3s ease;
 }
+
+ #line2 {
+        border-bottom: 1px solid;
+        color:#ff85a7;
+        margin-top: 40px;
+        margin-bottom: 40px;
+
+    }
+ 
 
 #view:hover {
     transform: scale(1.1);
@@ -537,6 +568,52 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Remove or override the hover transform for .emoji */
+.fact-card:hover .emoji,
+.fact-card:focus-within .emoji {
+    transform: none; /* Keeps emoji strictly pinned to its parent group */
+}
+
+.fact-emoji,
+.emoji {
+    position: absolute;
+    top: -12px;
+    left: -8px;
+    right: auto;
+    bottom: auto;
+    font-size: clamp(28px, 4vw, 38px); /* Fluid sizing that shrinks smoothly on mobile */
+    line-height: 1;
+    z-index: 3;
+    transition: transform 0.35s ease;
+}
+
+/* Even cards: Bottom-Right corner offset */
+.fact-card:nth-child(even) .emoji,
+.fact-card:nth-child(even) .fact-emoji {
+    
+    transform: rotate(-4deg);
+}
+
+#sss-intro {
+        display: flex;
+        gap: 70px;
+        line-height: 0;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 390px;
+        margin-bottom: 40px;
+        justify-content: center;
+    }
+
+#sss-intro #x {
+    width: 80px
+}
+
+
+
+
+    /* Pinned to the image corner, scales with the image */
+}
 
 
 
@@ -548,6 +625,11 @@ html {
         max-width: 900px;
         justify-content: center;
     }
+
+    .fact-card:nth-child(even) .fact-photo-wrap {
+        margin-bottom: 35px;
+    }
+   
 
     body {
         margin: 0;
@@ -584,8 +666,11 @@ html {
 
     footer {
         max-width: 100%;
-        padding-top: 30px
+        padding-top: 20px;
+        padding-bottom: 20px
     }
+
+   
 
     #sss-img {
         display: flex;
@@ -599,6 +684,8 @@ html {
         width: auto;
         
     }
+
+
 
     
     #sss {
@@ -650,7 +737,7 @@ html {
         line-height: 0;
         margin: 0;
         max-width: 950px;
-        margin-bottom: 70px;
+        margin-bottom: 40px;
        
     }
 
@@ -728,11 +815,7 @@ html {
         flex-direction: row;
     }
 
-    #logo {
-        height: 90px;
-        width: auto;
-        margin: 0
-    }
+    
 
     #navigation #social {
         display: flex;
@@ -747,6 +830,8 @@ html {
         padding-top: 50px;
         padding-bottom: 50px;
     }
+
+
 
 
     
@@ -860,4 +945,317 @@ html {
         margin-top: 50px;
     }
 
+
+
+}
+
+/* ---------- About me / fun facts ---------- */
+
+#about {
+    position: relative;
+    max-width: 900px;
+    margin: 110px auto 60px;
+    text-align: center;
+}
+
+#about-intro h2 {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 32px;
+    line-height: 1.2;
+    margin: 0 0 10px;
+    background: linear-gradient(90deg, #E83D98 0%, #D95A7D 15.87%, #DF7B4C 34.62%, #DFA24C 49.52%, #DF7B4C 67.31%, #D95A7D 81.25%, #E83D98 100%);
+    background-clip: text;
+    color: transparent;
+    background-size: 200% auto;
+    animation: gradientanimation 3s linear infinite;
+}
+
+#about-intro p {
+    margin: 0 auto 36px;
+    
+}
+
+#fact-track {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    text-align: left;
+}
+
+.fact-card {
+    background: #ffe4de;
+    border: solid 1px #ecac9b;
+    border-radius: 14px;
+    box-shadow: 0 5px 15.49px 0px rgba(0, 0, 0, 0.15);
+    padding: 26px 20px 22px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.fact-copy {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.fact-caption-group .emoji {
+    
+    top: 7px;
+    right: -10px;
+    left: -27px;
+    bottom: auto;
+    
+}
+
+.fact-card p {
+    margin: 0;
+    font-size: 14.5px;
+}
+
+.fact-caption-group .fact-emoji {
+    
+}
+
+.fact-emoji {
+    line-height: 1;
+    position: absolute;
+    font-size: 32px;
+    line-height: 1;
+    z-index: 3;
+    transform: rotate(-6deg);
+    transition: transform 0.35s ease;
+    top: -18px;
+    left: -20px
+}
+
+.emoji {
+    position: absolute;
+    font-size: 37px;
+    line-height: 1;
+    z-index: 2;
+    transform: rotate(4deg);
+    transition: transform 0.35s ease;
+}
+
+.fact-card:nth-child(even) .emoji,
+.fact-card:nth-child(even) .fact-emoji {
+    top: auto;
+    bottom: -8px;
+    left: auto;
+    right: -28px;
+    transform: rotate(6deg)
+}
+
+/* Hover & Focus-Within Animations (Expand + Opposite Tilt) */
+.fact-card:hover .fact-emoji,
+.fact-card:hover .emoji,
+.fact-card:focus-within .fact-emoji,
+.fact-card:focus-within .emoji {
+    transform: rotate(4deg) !important;
+}
+
+.fact-card:nth-child(even):hover .fact-emoji,
+.fact-card:nth-child(even):hover .emoji,
+.fact-card:nth-child(even):focus-within .fact-emoji,
+.fact-card:nth-child(even):focus-within .emoji {
+    transform: rotate(6deg);
+}
+
+
+/* ---- photo + caption + arrow ---- */
+
+.fact-photo-wrap {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    margin-bottom: 23px;
+}
+
+.fact-card:nth-child(even) .fact-photo-wrap {
+    margin-bottom: 35px;
+}
+
+.fact-photo {
+    
+    border-radius: 12px;
+    border: 4px solid #fff;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
+    transform: rotate(-3deg);
+    transition: transform 0.35s ease;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Prevents image distortion */
+    display: block;
+}
+
+.fact-card:nth-child(even) .fact-photo {
+    transform: rotate(3deg);
+}
+
+.fact-card:hover .fact-photo,
+.fact-card:focus-within .fact-photo {
+    transform: rotate(0deg) scale(1.04);
+}
+
+.fact-caption-group {
+    position: absolute;
+    top: -14px;
+    right: -8px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    transition: transform 0.35s ease;
+}
+
+.fact-card:nth-child(even) .fact-caption-group {
+    top: auto;
+    bottom: -21px;
+    right: auto;
+    left: -8px;
+    align-items: flex-start;
+}
+
+.fact-card:nth-child(even) .fact-emoji {
+    
+    align-items: flex-start;
+    font-size: 40px;
+    
+}
+
+.fact-card:nth-child(even) .emoji {
+    align-items: flex-start;
+    font-size: 39px;
+    
+}
+
+
+.fact-emoji {
+    
+    transition: transform 0.35s ease;
+}
+
+
+.emoji {
+    position: absolute;
+    
+    transition: transform 0.35s ease;
+    
+    
+}
+
+
+.fact-card:hover .fact-caption-group,
+.fact-card:focus-within .fact-caption-group {
+    transform: translateY(-3px) scale(1.06);
+}
+
+.fact-caption {
+    display: inline-block;
+    background: #fff;
+    color: #d5577b;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 12.5px;
+    padding: 5px 12px;
+    border-radius: 100px;
+    border: 1.5px solid #ecac9b;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.14);
+    transform: rotate(-4deg);
+    white-space: nowrap;
+}
+
+.fact-card:nth-child(even) .fact-caption {
+    transform: rotate(4deg);
+}
+
+.fact-card:nth-child(even) .fact-emoji {
+    transform: rotate(4deg);
+}
+
+.fact-card:nth-child(even) .emoji {
+    transform: rotate(4deg);
+}
+
+.fact-arrow-wrap {
+    display: block;
+    width: 7px;
+    height: auto;
+    margin-top: -2px;
+    transform: scaleX(-1);
+}
+
+.fact-card:nth-child(even) .fact-arrow-wrap {
+    transform: scaleY(-1);
+}
+
+.fact-arrow {
+    width: 110px;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+@keyframes squiggle-wiggle {
+    0%, 100% { transform: rotate(0deg); }
+    30% { transform: rotate(-10deg); }
+    60% { transform: rotate(6deg); }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .fact-card:hover .fact-arrow,
+    .fact-card:focus-within .fact-arrow {
+        animation: squiggle-wiggle 0.5s ease-in-out;
+    }
+}
+
+.fact-card:nth-child(2) { background: #ffd9dd; }
+.fact-card:nth-child(3) { background: #ffe9c9; }
+.fact-card:nth-child(4) { background: #ffd6c9; }
+
+.fact-card:nth-child(odd):hover,
+.fact-card:nth-child(odd):focus-within {
+    transform: scale(1.03) rotate(-1deg);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+.fact-card:nth-child(even):hover,
+.fact-card:nth-child(even):focus-within {
+    transform: scale(1.03) rotate(1deg);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+/* Scroll-triggered entrance, staggered per card. Cards are fully visible
+   without this — it's a progressive enhancement for browsers that support
+   scroll-driven animations, and it's skipped entirely for anyone who has
+   asked their OS for reduced motion. */
+@media (prefers-reduced-motion: no-preference) {
+    .fact-card {
+        animation: slide linear both;
+        animation-timeline: view();
+        animation-range: entry 10% cover 35%;
+    }
+
+    .fact-card:nth-child(2) { animation-range: entry 15% cover 40%; }
+    .fact-card:nth-child(3) { animation-range: entry 20% cover 45%; }
+    .fact-card:nth-child(4) { animation-range: entry 25% cover 50%; }
+}
+
+/* Respect reduced-motion site-wide: stops the gradient text animation,
+   scroll-reveal cards, and hover scale effects from moving. */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001ms !important;
+        scroll-behavior: auto !important;
+    }
 }
