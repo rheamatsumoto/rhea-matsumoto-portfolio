@@ -9,7 +9,7 @@ h1 {
     color: transparent;
     background-size: 200% auto;
     animation: gradientanimation 2s linear infinite;
-    font-size:39px;
+    font-size: 2.5rem;
     padding-bottom: 5px;
 }
 
@@ -42,7 +42,7 @@ h3 {
     color:#b14565;
     list-style-type: none;
     text-decoration: none;
-    line-height: 0
+    
     
 }
 
@@ -54,7 +54,7 @@ h4 {
     list-style-type: none;
     text-decoration: none;
     line-height: 23px;
-    font-size: 17px;
+    font-size: 1rem;
 }
 
 h5 {
@@ -192,7 +192,7 @@ body {
 }
 
 #sss-text h2 h5 {
-    line-height: 1.5em;
+    line-height: 1.5rem;
     
 }
 
@@ -221,12 +221,12 @@ footer {
 
 
 #footertop {
-    font-size: 21px;
+    font-size: 1.4rem;
     
 }
 
 #footertop h3 {
-    line-height: 1.5em;
+    line-height: 1.2em;
 }
 
 #footerbottom {
@@ -298,15 +298,15 @@ footer ul li a {
     display: block;
     background-color:#ffd2d9;
     border-radius: 15px;
-    max-width: 90px;
+    max-width: 100px;
     text-align: center;
     border:#f9a9b5 solid 1px;
     box-sizing: border-box;
-    font-size: 17px;
+    font-size: 1.2rem;
     padding-top: 5px;
     padding-bottom: 5px;
-    padding-left: 9px;
-    padding-right: 9px;
+    padding-left: 11px;
+    padding-right: 11px;
     position: relative;
     overflow: hidden;
     transition: color 0.4s ease;
@@ -422,12 +422,13 @@ footer ul li a {
     border-radius: 7px;
     margin: 0;
     font-family: "Host Grotesk", sans-serif;
-    font-size: 13px;
+    font-size: 0.9rem;
     align-items: center;
-    line-height: 1.1;
+    line-height: 0.7rem;
     color:#de755b;
     padding-left: 3px;
     padding-right: 3px;
+    
 }
 
 a {
@@ -510,6 +511,17 @@ h1 a {
     height: 0;
 }
 
+#mockups {
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#mockups img {
+    height: 350px;
+    width: auto
+}
+
 
 
 
@@ -549,6 +561,49 @@ h1 a {
         margin-bottom: 40px;
 
     }
+
+   #publishedweb {
+        display: block;
+        background-color:#ffd2d9;
+        border-radius: 15px;
+        max-width: 320px;
+        text-align: center;
+        border:#f9a9b5 solid 1px;
+        box-sizing: border-box;
+        font-size: 1.3rem;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 11px;
+        padding-right: 11px;
+        position: relative;
+        overflow: hidden;
+        transition: color 0.4s ease;
+        margin: auto;
+        z-index: 1;
+        
+   }
+
+
+
+
+#publishedweb::before {
+    position: absolute;
+    content: '';
+    top: 0%;
+    left: 50%;
+    width: 20px;
+    height: 100%;
+    background-color:#ffc8d0;
+    border-radius: 50%;
+    transform: translateX(-50%) scaleX(0);
+    transform-origin: center;
+    transition: transform 0.5s ease;
+    z-index: -1;
+}
+
+#publishedweb:hover::before {
+    transform: translateX(-50%) scale(17);
+}
  
 
 #view:hover {
@@ -603,11 +658,33 @@ html {
         max-width: 390px;
         margin-bottom: 40px;
         justify-content: center;
+        
     }
 
 #sss-intro #x {
-    width: 80px
+    width: 80px;
+    
 }
+
+#sss-intro .x {
+    width: 80px;
+    
+}
+
+
+#about-heading {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-heading img {
+    margin: 0;
+    padding: 0;
+    
+}
+
 
 
 
@@ -661,7 +738,7 @@ html {
     }
     
     .notfooter {
-        max-width: 1020px;
+        max-width: 810px;
     }
 
     footer {
@@ -670,7 +747,8 @@ html {
         padding-bottom: 20px
     }
 
-   
+
+
 
     #sss-img {
         display: flex;
@@ -679,13 +757,24 @@ html {
     }
 
     #sss-img img {
-        max-height: 400px;
+        width: 820px;
         justify-content: center;
-        width: auto;
+        height: auto;
         
     }
 
 
+    #mockups {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        flex-direction: row;
+    }
+
+    #mockups img {
+        height: 350px;
+        width: auto;
+    }
 
     
     #sss {
@@ -716,7 +805,7 @@ html {
         margin: 0 auto;
     }
 
-    #thumbnail, #goals, #sss-img {
+    #thumbnail, #goals {
         width: 100%
     }
 
@@ -733,9 +822,10 @@ html {
 
     #sss-intro {
         display: flex;
-        gap: 140px;
+        gap: 150px;
         line-height: 0;
-        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
         max-width: 950px;
         margin-bottom: 40px;
        
@@ -757,6 +847,12 @@ html {
         padding: 0;
     }
 
+    .x h3 {
+        line-height: 0;
+        margin-top: 0;
+        padding: 0;
+    }
+
     
     
 
@@ -767,6 +863,61 @@ html {
         justify-content: center;
         margin: auto;
     }
+
+    #low-fidelity img {
+        width: 360px;
+        height: auto;
+        
+    }
+
+    #low-fidelity-mockup {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        justify-content: center;
+        margin: auto;
+    }
+
+    #low-fidelity-mockup img {
+        width: auto;
+        height: 1100px;
+        
+    }
+
+    #mid-fidelity-mockup {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        justify-content: center;
+        margin: auto;
+    }
+
+    #mid-fidelity-mockup img {
+        width: auto;
+        height: 1100px;
+        
+    }
+
+    #high-fidelity-mockup {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        justify-content: center;
+        margin: auto;
+    }
+
+    #high-fidelity-mockup img {
+        width: auto;
+        height: 1100px;
+        
+    }
+
+    #design-system {
+        width: 600px;
+        height: auto;
+    }
+
+    
 
     #mid-fidelity {
         display: flex;
@@ -798,7 +949,7 @@ html {
         align-items: center;
         padding: 20px 10px;
         margin: auto;
-        width: 1000px;
+        width: 840px;
     }
 
     #navigation ul {
@@ -845,7 +996,7 @@ html {
     #navigation ul li a {
         font-family: "Plus Jakarta Sans", sans-serif;
         font-weight: 500;
-        font-size: 17px;
+        font-size: 1rem;
         height: 36px;
         list-style-type: none;
         color: rgb(224, 96, 113);
@@ -906,7 +1057,9 @@ html {
         gap: 30px;
         padding-left: 50px;
         padding-right: 50px;
-        max-width: 700px;
+        max-width: 900px;
+        padding-top: 30px;
+        padding-bottom: 30px
     }
 
    
@@ -962,7 +1115,7 @@ html {
     font-family: "Plus Jakarta Sans", sans-serif;
     font-weight: 600;
     font-style: italic;
-    font-size: 32px;
+    font-size: 2.3rem;
     line-height: 1.2;
     margin: 0 0 10px;
     background: linear-gradient(90deg, #E83D98 0%, #D95A7D 15.87%, #DF7B4C 34.62%, #DFA24C 49.52%, #DF7B4C 67.31%, #D95A7D 81.25%, #E83D98 100%);
@@ -981,15 +1134,17 @@ html {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 20px;
     text-align: left;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .fact-card {
-    background: #ffe4de;
-    border: solid 1px #ecac9b;
+    background: #fff5f3;
+    border: solid 1px #cabcb8;
     border-radius: 14px;
     box-shadow: 0 5px 15.49px 0px rgba(0, 0, 0, 0.15);
     padding: 26px 20px 22px;
@@ -997,6 +1152,10 @@ html {
     flex-direction: column;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
+    margin: auto;
+    flex: 1 1 220px; /* Grow, shrink, and set a base width */
+    max-width: 260px; /* Prevents cards from getting too wide on larger screens */
+    margin: 0; /
 }
 
 .fact-copy {
@@ -1016,17 +1175,15 @@ html {
 
 .fact-card p {
     margin: 0;
-    font-size: 14.5px;
+    font-size: 1rem;
 }
 
-.fact-caption-group .fact-emoji {
-    
-}
+
 
 .fact-emoji {
     line-height: 1;
     position: absolute;
-    font-size: 32px;
+    font-size: 2rem;
     line-height: 1;
     z-index: 3;
     transform: rotate(-6deg);
@@ -1037,7 +1194,7 @@ html {
 
 .emoji {
     position: absolute;
-    font-size: 37px;
+    font-size: 2rem;
     line-height: 1;
     z-index: 2;
     transform: rotate(4deg);
@@ -1126,13 +1283,13 @@ html {
 .fact-card:nth-child(even) .fact-emoji {
     
     align-items: flex-start;
-    font-size: 40px;
+    font-size: 2.3rem;
     
 }
 
 .fact-card:nth-child(even) .emoji {
     align-items: flex-start;
-    font-size: 39px;
+    font-size: 2.3rem;
     
 }
 
@@ -1164,7 +1321,7 @@ html {
     font-family: "Plus Jakarta Sans", sans-serif;
     font-weight: 700;
     font-style: italic;
-    font-size: 12.5px;
+    font-size: 0.9rem;
     padding: 5px 12px;
     border-radius: 100px;
     border: 1.5px solid #ecac9b;
@@ -1217,9 +1374,9 @@ html {
     }
 }
 
-.fact-card:nth-child(2) { background: #ffd9dd; }
-.fact-card:nth-child(3) { background: #ffe9c9; }
-.fact-card:nth-child(4) { background: #ffd6c9; }
+.fact-card:nth-child(2) { background: #fff5f3; }
+.fact-card:nth-child(3) { background: #fff5f3; }
+.fact-card:nth-child(4) { background: #fff5f3; }
 
 .fact-card:nth-child(odd):hover,
 .fact-card:nth-child(odd):focus-within {
