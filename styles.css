@@ -662,7 +662,8 @@ html {
         max-width: 390px;
         margin-bottom: 40px;
         justify-content: center;
-        
+        padding-left: 20px;
+        padding-right: 20px
     }
 
 #sss-intro #x {
