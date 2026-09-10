@@ -177,8 +177,9 @@ body {
 
 #about {
     position: relative;
-    margin: 0 auto;
-    max-width: 400px;
+    margin: 110px auto 60px;
+    max-width: 90px;
+    text-align: center;
 }
 
 
@@ -367,14 +368,18 @@ footer ul li a {
 #titles {
     display: flex;
     align-items: center;
-    gap: 8px
+    gap: 1px
 }
 
 #titles img {
-    max-width: 49px;
+    max-width: 99px;
     height: auto;
     margin: 0;
     padding: 0
+}
+
+#titles h2 {
+    line-height: 1.1;
 }
 
 
@@ -675,6 +680,31 @@ html {
     width: 80px;
     
 }
+
+#gif-intro {
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap; /* Allows text and GIF to sit naturally together */
+    gap: 8px;
+    margin-bottom: 10px;
+    
+}
+
+#gif-intro h1 {
+    font-size: clamp(1.6rem, 3.9vw, 2.2rem); 
+    margin: 0;
+    line-height: 1.2;
+    display: inline;
+}
+
+#gif-intro img {
+    display: inline-block; /* Overrides global img display: block */
+    margin: 0 !important; /* Overrides global margin-left: auto / margin-right: auto */
+    width: clamp(24px, 9vw, 59px); /* Keeps star size proportional to the text */
+    height: auto;
+    flex-shrink: 0;
+}
+
 
 
 #about-heading {
@@ -1068,6 +1098,16 @@ html {
         padding-bottom: 30px
     }
 
+    #fact-track {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        text-align: left;
+    }
+
    
 
     #stickers {
@@ -1094,7 +1134,23 @@ html {
         margin: auto;
     }
 
+    #gif-intro {
+        display: inline-flex;
+        align-items: center;
+        gap: 15px;
+    }
 
+    #gif-intro h1 {
+        font-size: 2.5rem; /* Standard desktop size */
+        margin: 0;
+    }
+
+    #gif-intro img {
+        width: 80px; /* Fixed desktop size */
+        height: auto;
+        margin: 0;
+    }
+    
 
     #profile {
         display: flex;
@@ -1102,6 +1158,20 @@ html {
         max-width: 1000px;
         margin: auto;
         margin-top: 50px;
+    }
+
+    .fact-card {
+        background: #fff5f3;
+        border: solid 1px #cabcb8;
+        border-radius: 14px;
+        box-shadow: 0 5px 15.49px 0px rgba(0, 0, 0, 0.15);
+        padding: 26px 20px 22px;
+        display: flex;
+        flex-direction: column;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        position: relative;
+        width: 100%; /* Allows grid to control sizing evenly */
+        box-sizing: border-box;
     }
 
 
@@ -1161,7 +1231,7 @@ html {
     margin: auto;
     flex: 1 1 220px; /* Grow, shrink, and set a base width */
     max-width: 260px; /* Prevents cards from getting too wide on larger screens */
-    margin: 0; /
+    margin: 0; 
 }
 
 .fact-copy {
